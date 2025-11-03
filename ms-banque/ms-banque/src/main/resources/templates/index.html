@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microservice Banque</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>🏦 Microservice Banque</h1>
+        <p>API REST pour la gestion des comptes bancaires</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>📋 Documentation API</h2>
+            <p>Accédez à la documentation Swagger pour tester les endpoints :</p>
+            <a href="/swagger-ui.html" class="btn" target="_blank">
+                Ouvrir Swagger UI
+            </a>
+        </div>
+
+        <div class="card">
+            <h2>🗄️ Base de données</h2>
+            <p>Accédez à la console H2 pour voir les données :</p>
+            <a href="/h2-console" class="btn" target="_blank">
+                Ouvrir Console H2
+            </a>
+            <p><strong>URL JDBC:</strong> jdbc:h2:mem:banquedb</p>
+            <p><strong>Utilisateur:</strong> sa | <strong>Mot de passe:</strong> (vide)</p>
+        </div>
+
+        <div class="card">
+            <h2>🔗 Endpoints API</h2>
+            <ul>
+                <li><strong>GET</strong> /api/banque/comptes - Liste tous les comptes</li>
+                <li><strong>GET</strong> /api/banque/comptes/{id} - Récupère un compte</li>
+                <li><strong>POST</strong> /api/banque/comptes - Crée un nouveau compte</li>
+                <li><strong>PUT</strong> /api/banque/comptes/{id} - Met à jour un compte</li>
+                <li><strong>DELETE</strong> /api/banque/comptes/{id} - Supprime un compte</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>Microservice développé avec Spring Boot 3</p>
+    </footer>
+</div>
+
+<script src="/js/app.js"></script>
+</body>
+</html>

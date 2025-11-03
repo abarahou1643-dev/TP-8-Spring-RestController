@@ -1,0 +1,4 @@
+ma\rest\spring\services\ICompteService.class
+ma\rest\spring\controllers\CompteController.class
+ma\rest\spring\controllers\HomeController.class
+ma\rest\spring\MsBanqueApplication.class
